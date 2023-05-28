@@ -34,4 +34,8 @@ Font Awesome is acknowledged for the Twitter icon used in the project.
 Contact
 If you have any questions or need further assistance, please feel free to contact us at [hopesalive@example.com].
 
-Thank you for your interest in the Dynamic Quotes project. Let the quotes inspire and empower you!
+Thank you for your interest in t![Screenshot 2023-05-28 111810]
+he Dynamic Quotes project. Let the quotes inspire and empower you!
+
+ScreenShot:
+(https://github.com/bhos1242/Dynamic-Quote-Web/assets/92811935/abbf16bf-274c-4e9a-8c0b-3f33df8769e2)
