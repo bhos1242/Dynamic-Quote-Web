@@ -13,53 +13,16 @@
 <body>
   <div class="main-div">
     <div class="center-div">
-      <div class="twitter-icon"><i class="fab fa-twitter fa-xl" style="color: #1964e6;"></i></div>
+      <div class="twitter-icon"><i class="fa-brands fa-twitter fa-fade fa-xl" style="color: #1964e6;"></i></div>
       <div id="quotes"></div>
       <div id="author"></div>
       <button id="newQ">New Quotes</button>
-      <button id="tweetMe"><i class="fab fa-twitter fa-xl" style="color: #212E3E;"></i>
+      <button id="tweetMe"><i class="fa-brands fa-twitter fa-fade fa-xl" style="color: #212E3E;"></i>
         Tweet</button>
     </div>
   </div>
 
-  <script>
-    const quotes = document.getElementById("quotes");
-    const author = document.getElementById("author");
-    const newQ = document.getElementById("newQ");
-    const tweetMe = document.getElementById("tweetMe");
-    let realData = "";
-    let qData = ""
-
-    const tweetNow = () => {
-      let tweetPost = `https://twitter.com/intent/tweet?text=${qData.text}`;
-      window.open(tweetPost);
-    }
-
-    const getNewQuote = () => {
-      let randInt = Math.floor(Math.random() * realData.length);
-      qData = realData[randInt];
-      quotes.innerText = `"${realData[randInt].text}"`;
-      qData.author == null ? (author.innerText = "Vivek Bhos") : (author.innerText = `${qData.author}`);
-    }
-
-    const getQuote = async () => {
-
-      const api = "https://type.fit/api/quotes";
-
-      try {
-        let response = await fetch(api);
-        realData = await response.json();
-        getNewQuote();
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    tweetMe.addEventListener("click", tweetNow);
-    newQ.addEventListener("click", getNewQuote);
-    getQuote();
-
-  </script>
+<script src="./index.js"></script>
 </body>
 
 </html>
